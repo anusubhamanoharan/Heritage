@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Thanjavur Artistic Heritage</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: powderblue;
+            color: navy;
+        }
+
+        nav {
+            background-color: navy;
+            color: white;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        header {
+            background: linear-gradient(to right, cornflowerblue, navy);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        .tagline {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffeb3b;
+        }
+
+        .quote {
+            margin-top: 20px;
+            font-style: italic;
+            font-size: 18px;
+            color: #f0f8ff;
+        }
+
+        main {
+            background-color: #e6f2ff;
+            padding: 40px 20px;
+        }
+
+        video {
+            width: 1300px;
+            height: 700px;
+            border: 5px solid navy;
+            border-radius: 12px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        figure {
+            margin: 0;
+            text-align: center;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            overflow: hidden;
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        figure:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+        }
+
+        figure img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            padding: 10px;
+            font-size: 16px;
+            background-color: cornflowerblue;
+            color: white;
+        }
+
+        footer {
+            background: linear-gradient(to right, navy, cornflowerblue);
+            color: white;
+            padding: 50px 30px;
+            margin-top: 50px;
+        }
+
+        footer h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #ffeb3b;
+        }
+
+        .footer-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .footer-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .footer-box:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-box h3 {
+            color: #ffeb3b;
+        }
+
+        .footer-box p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div><strong>🎨 Thanjavur Artistic Heritage</strong></div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#video">Watch</a>
+            <a href="#moreinfo">Info</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Performing Arts Heritages</h1>
+        <div class="tagline">✨ Legacy Beyond Architecture ✨</div>
+        <p class="quote">"Where colors, rhythm, and craft weave a timeless story."</p>
+    </header>
+
+    <main>
+        <video id="video" controls autoplay>
+            <source src="videos/thanjavur-big temple brihadeeswarar temple video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+       <div class="grid-gallery">
+    <figure>
+        <img src="images/art-bharatnatyam.jpg" alt="Bharatnatyam">
+        <figcaption>Classical dance form, Tamil Nadu<br>
+        Bharatnatyam</figcaption>
+    </figure>
+    <figure>
+        <img src="images/art-chariot.jpg" alt="Chariot">
+        <figcaption>Temple procession chariot artwork<br>
+        Chariot</figcaption>
+    </figure>
+    <figure>
+        <img src="images/art-mridangam1.jpg" alt="Mridangam 1">
+        <figcaption>Traditional South Indian percussion<br>
+        Mridangam</figcaption>
+    </figure>
+    <figure>
+        <img src="images/art-music.jpg" alt="Music">
+        <figcaption>Musical heritage and classical tunes<br>
+        Music</figcaption>
+    </figure>
+    <figure>
+        <img src="images/art-natarajar.jpg" alt="Natarajar">
+        <figcaption>Dancing Shiva sculpture icon<br>
+        Natarajar</figcaption>
+    </figure>
+    <figure>
+        <img src="images/art-thavil&nadaswararm.jpg" alt="Thavil and Nadaswaram">
+        <figcaption>Percussion and wind instruments combo<br>
+        Thavil and Nadaswaram</figcaption>
+    </figure>
+</div>
+
+    </main>
+<a href="index.html" style="text-decoration:none; padding:10px 20px; background-color:#4CAF50; color:white; border-radius:5px";>
+        ← Return Home
+    </a>
+    <footer id="moreinfo">
+        <h2>📍 Places Around</h2>
+        <div class="footer-details">
+            <div class="footer-box">
+                <h3>🍽️ Restaurant</h3>
+                <p><strong>Spice Garden</strong></p>
+                <p>22 Raja Street, Thanjavur</p>
+                <p>📞 +91-9090909090</p>
+            </div>
+            <div class="footer-box">
+                <h3>🏥 Hospital</h3>
+                <p><strong>Apollo Hospital</strong></p>
+                <p>12th Health Road, Thanjavur</p>
+                <p>📞 +91-8040903020</p>
+            </div>
+            <div class="footer-box">
+                <h3>🏖️ Nearby Beach</h3>
+                <p><strong>East Coast Bay</strong></p>
+                <p>ECR Road, Sunrise Point</p>
+                <p>📞 +91-9090909090</p>
+            </div>
+            <div class="footer-box">
+                <h3>🏨 Hotel Stay</h3>
+                <p><strong>Grand Lee Asia</strong></p>
+                <p>Ring Road, Thanjavur</p>
+                <p>📞 +91-9090901212</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HERITAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color:lightblue;
+            color:powderblue;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: cornflowerblue;
+            padding: 60px 20px;
+            text-align: center;
+            color:powderblue;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .collage-container {
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        figure {
+            margin: 0;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        figure:hover {
+            background-color:powderblue;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .collage img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: 3px solid #c5e1a5;
+            transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.3s ease;
+        }
+
+        .collage img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            border-color: #2e7d32;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 17px;
+            color:palevioletred;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        figure:hover figcaption {
+            color:black;
+        }
+
+        video {
+            width: 95%;
+            max-width: 1400px;
+            height: auto;
+            display: block;
+            margin: 40px auto;
+            border: 4px solid navy;
+            border-radius: 16px;
+        }
+
+        footer {
+            background-color:cornflowerblue;
+            color:white;
+            padding: 50px 20px;
+            margin-top: 40px;
+        }
+
+        .footer-title {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 30px;
+            color: #ffca28;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .footer-box {
+            background-color:midnightblue;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .footer-box:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        .footer-box h3 {
+            color: silver;
+            margin-bottom: 10px;
+        }
+
+        .footer-box p, .footer-box a {
+            font-size: 15px;
+            color: #eceff1;
+            text-decoration: none;
+        }
+
+        .footer-box a:hover {
+            text-decoration: underline;
+            color: #fff59d;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🌿 Explore the Heritages of Thanjavur 🛕</h1>
+</header>
+
+<div class="collage-container">
+    <div class="collage">
+        <figure>
+            <a href="arch.html"> 
+                <img src="images/thanjavur-big temple1.jpg" title="Thanjavur - Brihadeeswarar Temple">
+            </a>
+            <figcaption>Architectural Heritage</figcaption>
+        </figure>
+        <figure>
+            <a href="artistic.html"> 
+                <img src="images/bronze sculpture.jpeg" title="Bronze Sculpture">
+            </a>
+            <figcaption>Artistic Heritage</figcaption>
+        </figure>
+        <figure>
+            <a href="art.html"> 
+                <img src="images/bharatanatyam.jpg" title="Bharatanatyam Dance">
+            </a>
+            <figcaption>Performing Arts Heritage</figcaption>
+        </figure>
+        <figure>
+            <a href="literary.html"> 
+                <img src="images/saraswathi mahal library.webp" title="Saraswathi Mahal">
+            </a>
+            <figcaption>Literary Heritage</figcaption>
+        </figure>
+        <figure>
+            <a href="festival.html">
+                <img src="images/natyanjali-festival.jpg" title="Natyanjali Festival">
+            </a>
+            <figcaption>Festival Heritage</figcaption>
+        </figure>
+    </div>
+</div>
+
+<video autoplay loop controls playsinline>
+    <source src="videos/temples.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<footer>
+    <div class="footer-title">📍 Travel Essentials</div>
+    <div class="footer-content">
+        <div class="footer-box">
+            <h3>🏨 Nearby Hotel</h3>
+            <p><strong>Name:</strong> Grand Thanjavur Inn</p>
+            <p><strong>Address:</strong> 123 Heritage Rd, Thanjavur</p>
+            <p><strong>Phone:</strong> +91-9020101010</p>
+        </div>
+        <div class="footer-box">
+            <h3>📞 Tourist Helpline</h3>
+            <p><strong>Email:</strong> support@tamilheritage.tn</p>
+            <p><strong>Phone:</strong> 1800-456-7890</p>
+        </div>
+        <div class="footer-box">
+            <h3>🗺️ Map Location</h3>
+            <p><a href="https://maps.google.com?q=thanjavur+brihadeeswarar+temple" target="_blank">Click to View</a></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
